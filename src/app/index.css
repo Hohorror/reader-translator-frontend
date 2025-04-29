@@ -1,0 +1,26 @@
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --swiper-theme-color: #232323;
+    --app-header-height: 65px;
+    --product-bottom-container-height: 70px;
+    --product-img-aspect-ratio-width: 1;
+    --product-img-aspect-ratio-height: 1.35;
+    --notification-container-right: 16px;
+  }
+  * {
+    @apply font-roboto;
+    @apply text-base;
+    @apply font-light;
+  }
+  html, body {
+    overflow-x: clip;
+  }
+  body {
+    position: relative;
+  }
+  button, a, img, svg {
+    user-select: none;
+  }
+}
