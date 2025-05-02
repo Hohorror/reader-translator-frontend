@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --font-roboto: "Roboto", "sans-serif"; 
+}
+
 @layer base {
   :root {
     --swiper-theme-color: #232323;
@@ -8,6 +12,11 @@
     --product-img-aspect-ratio-width: 1;
     --product-img-aspect-ratio-height: 1.35;
     --notification-container-right: 16px;
+  }
+  * {
+    @apply font-roboto;
+    @apply text-base;
+    @apply font-normal;
   }
   html, body {
     overflow-x: clip;
