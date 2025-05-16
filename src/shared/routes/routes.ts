@@ -1,11 +1,11 @@
 enum ROUTE {
   Root = '/',
-  Auth = 'auth',
+  Registration = 'registration',
   Login = 'login',
 }
 
 export enum ROUTER_PATHS {
   Root = ROUTE.Root,
-  Auth = `${ROUTE.Root}${ROUTE.Auth}`,
+  Registration = `${ROUTE.Root}${ROUTE.Registration}`,
   Login = `${ROUTE.Root}${ROUTE.Login}`,
 }

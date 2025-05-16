@@ -3,6 +3,11 @@
 
 @theme {
   --font-roboto: "Roboto", "sans-serif"; 
+  --color-primary: #4f46e5;
+  --breakpoint-lg: 1299.99px;
+  --breakpoint-md: 991.99px;
+  --breakpoint-sm: 767.99px;
+  --breakpoint-xs: 479.99px;
 }
 
 @layer base {
@@ -27,5 +32,9 @@
   }
   button, a, img, svg {
     user-select: none;
+  }
+  
+  a {
+    color: white;
   }
 }

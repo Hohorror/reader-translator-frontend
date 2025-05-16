@@ -1,5 +1,7 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import { Root } from '@pages/root'
+import { Registration } from '@pages/registration'
+import { Login } from '@pages/login'
 import { ROUTER_PATHS } from '@shared/routes'
 
 const routes = createBrowserRouter([
@@ -11,10 +13,12 @@ const routes = createBrowserRouter([
         index: true,
       },
       {
-        path: ROUTER_PATHS.Auth,
+        path: ROUTER_PATHS.Registration,
+        Component: Registration,
       },
       {
         path: ROUTER_PATHS.Login,
+        Component: Login,
       },
     ],
   },
